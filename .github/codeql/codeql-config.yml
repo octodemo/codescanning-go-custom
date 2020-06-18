@@ -8,7 +8,7 @@ name: "My CodeQL config"
    - name: local CWE query
      uses: ./.github/codeql/CWE-078/ 
    - name: local RegExp query
-     uses: ./.github/codeql/CWE-078/
+     uses: ./.github/codeql/CWE-190/
 
  
   paths-ignore:
