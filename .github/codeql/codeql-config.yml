@@ -1,0 +1,13 @@
+name: "My CodeQL config"
+
+disable-default-queries: true
+
+queries:
+#   - name: additional queries 
+#     uses: security-extended  # same as the lgtm-full suite, but limited to security queries from that suite
+  - name: local CWE queries
+    uses: ./.github/codeql/Security/ #referencing querypack
+
+paths-ignore:
+  - src
+  - lib
