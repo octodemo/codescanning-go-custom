@@ -6,9 +6,9 @@ name: "My CodeQL config"
  #   - name: additional queries 
  #     uses: security-extended  # same as the lgtm-full suite, but limited to security queries from that suite
    - name: local CWE query
-     uses: ./.github/codeql/CWE-312/ #referencing querypack
+     uses: ./.github/codeql/CWE-078/ 
    - name: local RegExp query
-     uses: ./.github/codeql/RegExp/
+     uses: ./.github/codeql/CWE-078/
 
  
   paths-ignore:
