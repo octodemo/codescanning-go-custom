@@ -9,9 +9,8 @@ queries:
 #     uses: ./.github/codeql/Security/ #referencing querypack
   - name: Use an external query (run a single query from an external QL pack)
     uses: github/codeql-go/ql/src/Security/CWE-020/IncompleteHostnameRegexp.ql@master
-  - name: Use an external query (run a folder of queries from an external QL pack)
-    uses: github/codeql-go/ql/src/Security@master
+#   - name: Use external queries (run a folder of queries from an external QL pack)
+#     uses: github/codeql-go/ql/src/Security@master
+  - name: Use external queries (run a folder of queries from an external QL pack)
+    uses: github/codeql-go/ql/src@master
 
-paths-ignore:
-  - src
-  - lib
