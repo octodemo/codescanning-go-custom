@@ -7,11 +7,13 @@ queries:
 #     uses: security-extended  # same as the lgtm-full suite, but limited to security queries from that suite
 #   - name: local CWE queries
 #     uses: ./.github/codeql/Security/ #referencing querypack
-  - name: Use an external query (run a single query from an external QL pack)
-    uses: github/codeql-go/ql/src/Security/CWE-020/IncompleteHostnameRegexp.ql@master
   - name: Use external queries (run a folder of queries from an external QL pack)
     uses: github/codeql-go/ql/src/Security@master
   - name: Use external queries (run a folder of queries from an external QL pack)
     uses: github/codeql-go/ql/src/codeql-suites@master
+  - name: Use external queries (run a folder of queries from an external QL pack)
+    uses: github/codeql-go/ql/src/experimental@master
+
+    
 
 
