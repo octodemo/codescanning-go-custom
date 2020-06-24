@@ -7,12 +7,14 @@ queries:
 #     uses: security-extended  # same as the lgtm-full suite, but limited to security queries from that suite
 #   - name: local CWE queries
 #     uses: ./.github/codeql/Security/ #referencing querypack
+#   - name: Use external queries (run a folder of queries from an external QL pack)
+#     uses: github/codeql-go/ql/src/Security@master
+#   - name: Use external queries (run a folder of queries from an external QL pack)
+#     uses: github/codeql-go/ql/src/codeql-suites@master
+#   - name: Use external queries (run a folder of queries from an external QL pack)
+#     uses: github/codeql-go/ql/src/experimental@master
   - name: Use external queries (run a folder of queries from an external QL pack)
-    uses: github/codeql-go/ql/src/Security@master
-  - name: Use external queries (run a folder of queries from an external QL pack)
-    uses: github/codeql-go/ql/src/codeql-suites@master
-  - name: Use external queries (run a folder of queries from an external QL pack)
-    uses: github/codeql-go/ql/src/experimental@master
+    uses: github/codeql-go/ql/src/semmle/go@master
 
     
 
