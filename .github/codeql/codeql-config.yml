@@ -3,8 +3,10 @@ name: "My CodeQL config"
 disable-default-queries: true
 
 queries:
-  - name: Use external security and quality queries
-    uses: github/codeql-go/ql/src/codeql-suites/go-security-and-quality.qls@master
+#   - name: Use external security and quality queries
+#     uses: github/codeql-go/ql/src/codeql-suites/go-security-and-quality.qls@master
+  - name: Use security extended queries
+    uses: github/codeql-go/ql/src/codeql-suites/go-security-extended.qls@master
     
 
     
